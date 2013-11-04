@@ -1,5 +1,6 @@
 Myapp::Application.routes.draw do
-  get "home/index"
+#  get "home/index"
+  match 'home', to: 'home#index', via: 'get'
   resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
